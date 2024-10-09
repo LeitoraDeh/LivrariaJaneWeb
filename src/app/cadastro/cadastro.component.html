@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg bg-black fixed-top"> <!--Barra inicial -->
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="vitrine">
+            <img src="logosolo.png" class="img-fluid logo" alt="Livraria Jane">
+        </a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <div class="mx-auto w-50">
+                <form class="d-flex mx-auto" (ngSubmit)="buscar()">
+                    <input class="form-control me-2" type="text" [(ngModel)]="filtro" placeholder="Sua próxima leitura" aria-label="Busca" name="busca" required>
+                    <button class="btn btn-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="ms-3">
+                <a href="login" class="nav-link me-4">
+                    <img src="pessoa.png" alt="Ícone de Login" class="img-fluid icon-login" style="width: 40px;">
+                    <span class="text-login">Login</span>
+                </a>
+            </div>
+
+            <div class="ms-3">
+                <a href="carrinho" class="nav-link me-4"> 
+                    <img src="carrinho.png" alt="Ícone de Carrinho" class="img-fluid icon-carrinho" style="width: 35px;">
+                    <span class="text-carrinho">Carrinho</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="spacer"></div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom"><!--Menu -->
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" style="width: 80%; display: flex; justify-content: space-between;"> 
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Clássicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Ficção científica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Fantasia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Romance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Não-ficção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Leituras conjuntas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Nosso espaço</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="custom-space"></div>
+
+<div class="container">
+    <div class="row r"> 
+        <div class="col-12 col-md-7 text-start"><!--Cadastro -->
+            <p class="h2 mt-4 text-center"> Preencha as informações solicitadas</p>     
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="formnome" placeholder="Nome completo">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="formemail" placeholder="Digite seu e-mail">
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Senha</label>
+                  <input type="email" class="form-control" id="formsenha" placeholder="Minimo 8 caracteres">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Confirme</label>
+                  <input type="password" class="form-control" id="formconfirma" placeholder="Confirme a senha">
+                </div>                
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">CPF</label>
+                  <input type="email" class="form-control" id="formcpf" placeholder="Informe seu CPF">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Telefone</label>
+                  <input type="password" class="form-control" id="formtelefone" placeholder="Seu telefone com DDD">
+                </div>                
+              </div>             
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center">
+            
+        </div>
+
+        <div class="col-12 col-md-4 justify-content-center text-center"> 
+            <img src="cadastrologo.png" class="img-fluid logocadastro mt-2" alt="Login">
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-dark btn-cadastro btn-lg mt-5">Criar cadastro</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div style="height: 80px;"></div>

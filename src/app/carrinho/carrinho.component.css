@@ -1,0 +1,132 @@
+.table {
+  margin-top: 20px;
+}
+
+.alert {
+  margin-bottom: 30px;
+  color: black;
+  background-color: white;
+  border-color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  align-content: center;
+  font-size: 20px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.logo {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Botão Buscar*/
+.btn-custom {
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+}
+
+/* Barra Menu*/
+.navbar-custom {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  width: 100%;
+  background-color: #f8f9fa; 
+}
+
+.navbar-toggler {
+  border-color: white; 
+  background-color:white;
+}
+
+.text-login {
+  display: none;
+}
+
+/* Barra Fixa*/
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; 
+}
+
+.spacer {
+  height: 80px; 
+}
+
+.custom-space {
+  height: 40px; 
+}
+
+.text-center{
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+
+  .icon-login{
+      display: none;
+  }
+
+  .text-login {
+      display: inline-block;
+      font-size: 1.2rem;
+      color: white;
+  }
+
+  .navbar .container-fluid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-collapse .nav-link {
+      margin-bottom: 10px;
+      
+  }
+
+  .navbar-brand {
+      display: flex; 
+      justify-content: center; 
+      margin-bottom: 5px;
+  }
+
+  .d-flex {
+      margin-bottom: 15px;
+  }
+
+  .navbar-collapse {
+      text-align: center;
+  }
+
+  .navbar-custom{
+      top: 55px; 
+ }
+  .navbar-custom ul {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .navbar-custom li {
+      margin: 5px; 
+      display: block;
+  }
+
+  .text-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      margin-top: 10px; 
+  }
+
+  .custom-space {
+    height: 60px; 
+  }
+  
+}

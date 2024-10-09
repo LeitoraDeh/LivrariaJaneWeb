@@ -1,0 +1,148 @@
+<nav class="navbar navbar-expand-lg bg-black fixed-top"> <!--Barra inicial -->
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="vitrine">
+            <img src="logosolo.png" class="img-fluid logo" alt="Livraria Jane">
+        </a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <div class="mx-auto w-50">
+                <form class="d-flex mx-auto" (ngSubmit)="buscar()">
+                    <input class="form-control me-2" type="text" [(ngModel)]="filtro" placeholder="Sua próxima leitura" aria-label="Busca" name="busca" required>
+                    <button class="btn btn-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="ms-3">
+                <a href="login" class="nav-link me-4">
+                    <img src="pessoa.png" alt="Ícone de Login" class="img-fluid icon-login" style="width: 40px;">
+                    <span class="text-login">Login</span>
+                </a>
+            </div>
+
+            <div class="ms-3">
+                <a href="carrinho" class="nav-link me-4"> 
+                    <img src="carrinho.png" alt="Ícone de Carrinho" class="img-fluid icon-carrinho" style="width: 35px;">
+                    <span class="text-carrinho">Carrinho</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="spacer"></div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom"><!--Menu -->
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" style="width: 80%; display: flex; justify-content: space-between;"> 
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Clássicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Ficção científica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Fantasia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Romance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Não-ficção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Leituras conjuntas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Nosso espaço</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="spacer"></div>
+
+<div class="container"><!--Carrosel -->
+    <div class="row"> 
+        <div class="col-12 col-md-5">
+            <div id="carrossel-pequena" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrossel-pequena" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrossel-pequena" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrossel-pequena" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pequenageral.jpg" class="d-block w-100" alt="Visão geral livro pequena coreografia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pequena2.jpg" class="d-block w-100" alt="Visão livro Pequena Coreografia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pequenadetalhe2.jpg" class="d-block w-100" alt="Detalhe orelha Pequena Coreografia">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-pequena" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel-pequena" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-md-7"> 
+            <p class="h2 mt-4 text-left"> Pequena coreografia do adeus
+                <small class="text-body-secondary"> - Aline Bei</small></p> 
+            <p class="text-justify">Em seu segundo livro, Aline Bei ― autora do premiado O peso do pássaro morto ― constrói um retrato tão sensível quanto brutal sobre família, amor e abandono. Livro finalista dos prêmios Jabuti e São Paulo de Literatura 2022.</p>
+            <p class="text-justify">Julia é filha de pais separados: sua mãe não suporta a ideia de ter sido abandonada pelo marido, enquanto seu pai não suporta a ideia de ter sido casado. Sufocada por uma atmosfera de brigas constantes e falta de afeto, a jovem escritora tenta reconhecer sua individualidade e dar sentido à sua história, tentando se desvencilhar dos traumas familiares.
+                Entre lembranças da infância e da adolescência, e sonhos para o futuro, Julia encontra personagens essenciais para enfrentar a solidão ao mesmo tempo que ensaia sua própria coreografia, numa sequência de movimentos de aproximação e afastamento de seus pais que lhe traz marcas indeléveis.</p>
+            <div class="d-flex justify-content-end mt-4">
+                <a href="carrinho" class="btn btn-pequena btn-lg">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="container"><!--Citação -->
+    <div class="row">
+      <div class="col-12 mb-3">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>Aline Bei narra como quem se posiciona à beira do abismo, o corpo em espera, o instante que se aproxima. Ler Pequena coreografia do adeus é acompanhar essa queda, íngreme e definitiva, mas também sublime e transformadora.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Carola Saavedra 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+<div class="spacer"></div>  
+
+  <div class="container"><!--Autora-->
+    <div class="row"> 
+        <div class="col-12 col-md-2">
+            <figure class="figure">
+                <img src="pequenaautora.jpg" class="figure-img img-fluid rounded" alt="Aline Bei autora">
+                </figure>
+                </div>
+        <div class="col-12 col-md-10"> 
+            <p class="text-left h5 mt-2"> SOBRE A AUTORA</p> 
+            <p class="text-left">ALINE BEI nasceu em São Paulo, em 1987. É formada em letras pela Pontifícia Universidade Católica de São Paulo e em artes cênicas pelo teatro-escola Célia Helena. Seu romance de estreia, O peso do pássaro morto (2017), foi vencedor do prêmio São Paulo de Literatura e do prêmio Toca, além de finalista do Prêmio Rio de Literatura. Pequena coreografia do adeus é seu segundo livro.</p>
+           </div>
+    </div>
+</div>
+
+<div style="height: 80px;"></div>

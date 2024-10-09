@@ -1,0 +1,156 @@
+.logo {
+    max-height: 60px;
+    width: auto;
+}
+
+.logogato {
+    max-height: 150px;
+    width: auto;
+}
+
+.btn-custom {
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.btn-custom:hover {
+    background-color: #bbaeac;
+}
+
+.navbar-custom {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    width: 100%;
+    background-color: #f8f9fa; 
+}
+
+.navbar-toggler {
+    border-color: white; 
+    background-color:white;
+}
+
+.text-carrinho {
+    display: none;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; 
+}
+
+.spacer {
+    height: 80px; 
+}
+
+.custom-space {
+    height: 40px; 
+}
+
+.espaco-link {
+    margin-left: 30px;
+    color: black;
+    margin-top: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+
+}
+
+.vertical-line {
+    border-left: 2px solid #acacac; 
+    height: 100%; 
+    margin: 0 20px; 
+}
+
+.horizontal-line {
+    border-top: 1.5px solid #acacac; 
+    width: 100%; 
+    margin: 20px 0; 
+    display: none; 
+}
+
+.btn-entra {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.text-center{
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+@media (max-width: 576px) {
+   .icon-carrinho {
+        display: none;
+    }
+
+  .text-carrinho {
+        display: inline-block;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse .nav-link {
+        margin-bottom: 10px;
+        
+    }
+
+    .navbar-brand {
+        display: flex; 
+        justify-content: center; 
+        margin-bottom: 5px;
+    }
+
+    .d-flex {
+        margin-bottom: 15px;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-custom{
+        top: 55px; 
+   }
+    .navbar-custom ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar-custom li {
+        margin: 5px; 
+        display: block;
+    }
+
+    .vertical-line {
+        display: none; 
+    }
+    
+    .horizontal-line {
+        display: block; 
+    }
+
+    .logogato{
+        display: none; 
+    }
+
+    .text-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 10px; 
+    }
+    
+    .espaco-link {
+        margin-top: 10px;
+        margin-left: none;
+    }
+
+}

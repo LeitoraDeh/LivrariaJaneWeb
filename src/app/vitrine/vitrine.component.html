@@ -1,0 +1,181 @@
+<nav class="navbar navbar-expand-lg bg-black fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">
+            <img src="logosolo.png" class="img-fluid logo" alt="Livraria Jane">
+        </a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <div class="mx-auto w-50">
+                <form class="d-flex mx-auto" (ngSubmit)="buscar()">
+                    <input class="form-control me-2" type="text" [(ngModel)]="filtro" placeholder="Sua próxima leitura" aria-label="Busca" name="busca" required>
+                    <button class="btn btn-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="ms-3">
+                <a href="login" class="nav-link me-4">
+                    <img src="pessoa.png" alt="Ícone de Login" class="img-fluid icon-login" style="width: 40px;">
+                    <span class="text-login">Login</span>
+                </a>
+            </div>
+
+            <div class="ms-3">
+                <a href="carrinho" class="nav-link me-4"> 
+                    <img src="carrinho.png" alt="Ícone de Carrinho" class="img-fluid icon-carrinho" style="width: 35px;">
+                    <span class="text-carrinho">Carrinho</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="spacer"></div>
+
+<div class="bg-custom text-center py-4">
+    <h1 class="display-6">É uma verdade universalmente conhecida que lugar de mulher é onde ela quiser!</h1>
+    </div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto" style="width: 80%; display: flex; justify-content: space-between;"> 
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Clássicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Ficção científica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Fantasia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Não-ficção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Leituras conjuntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Nosso espaço</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container mt-5">
+    <div class="row g-5">
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="1.jpg" class="produto" alt="Impostora: Yellowface">
+                <div class="card-body">
+                    <h5 class="card-title">Impostora: Yellowface</h5>
+                    <p class="card-text">R$53,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="2.jpg" class="produto" alt="Babel">
+                <div class="card-body">
+                    <h5 class="card-title">Babel: Ou a necessidade de violência</h5>
+                    <p class="card-text">R$69,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <a href="detalhe" class="card-img-top d-flex justify-content-center">
+                    <img src="3.jpg" class="produto" alt="Pequena coreografia do adeus">
+                </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Pequena coreografia do adeus </h5>
+                    <p class="card-text">R$69,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row g-5">
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="4.jpg" class="produto" alt="Emma">
+                <div class="card-body">
+                    <h5 class="card-title">Emma</h5>
+                    <p class="card-text">R$77,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="5.jpg" class="produto" alt="Eu que nunca conheci os homens">
+                <div class="card-body">
+                    <h5 class="card-title">Eu que nunca conheci os homens</h5>
+                    <p class="card-text">R$59,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="6.jpg" class="produto" alt="Violeta">
+                <div class="card-body">
+                    <h5 class="card-title">Violeta</h5>
+                    <p class="card-text">R$49,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row g-5">
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="7.jpg" class="produto" alt="A natureza da mordida">
+                <div class="card-body">
+                    <h5 class="card-title">A natureza da mordida</h5>
+                    <p class="card-text">R$64,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="8.jpg" class="produto" alt="Quarto de despejo">
+                <div class="card-body">
+                    <h5 class="card-title">Quarto de despejo</h5>
+                    <p class="card-text">R$69,90</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="9.jpg" class="produto" alt="Canção para ninar menino grande">
+                <div class="card-body">
+                    <h5 class="card-title">Canção para ninar menino grande</h5>
+                    <p class="card-text">$40,00</p>
+                    <a href="#" class="btn btn-custom2">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 80px;"></div>
